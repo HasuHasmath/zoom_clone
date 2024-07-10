@@ -13,7 +13,7 @@ export const sideBarLinks = [
   },
   {
     label: "Previous",
-    route: "/previous ",
+    route: "/previous",
     imgUrl: "/icons/previous.svg",
   
   },
