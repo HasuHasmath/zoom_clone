@@ -4,6 +4,8 @@ import "./globals.css";
 import Image from "next/image";
 import { ClerkProvider } from "@clerk/nextjs";
 
+import { Toaster } from "@/components/ui/toaster"
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -38,6 +40,7 @@ export default function RootLayout({
       >
       <body className={`${inter.className} bg-dark-2`}>
         {children}
+        <Toaster />
       </body>
       </ClerkProvider>
     </html>
