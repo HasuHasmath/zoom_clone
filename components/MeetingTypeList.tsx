@@ -50,7 +50,8 @@ const MeetingTypeList = () => {
       if (!call) throw new Error("Failed to create call");
 
       const startsAt =
-        values.dateTime.toISOString() || new Date(Date.now()).toISOString;
+        //values.dateTime.toISOString() || new Date(Date.now()).toISOString;
+          values.dateTime.toISOString();
       const description = values.description || "Instant Meeting";
 
       await call.getOrCreate({
